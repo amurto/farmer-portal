@@ -1,0 +1,60 @@
+.header-nav {
+    background-color:black;
+}
+
+.header-nav .navbar-brand {
+    color: white;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 25px;
+}
+
+.header-nav .navbar-brand:hover {
+    color: lawngreen;
+}
+
+.header-nav img {
+    padding-right: 1rem;
+}
+
+.header-nav .navbar-nav .nav-link {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 8px
+}
+
+.header-nav .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    font-size: 1.75rem;
+}
+
+.header-nav .navbar-nav .active>.nav-link, .header-nav .navbar-nav .nav-link.active, .header-nav .navbar-nav .nav-link.show, .header-nav .navbar-nav .show>.nav-link {
+    color: lawngreen;
+}
+
+.header-nav .navbar-nav .nav-link:focus, .header-nav .navbar-nav .nav-link:hover {
+    color: lawngreen;
+}
+
+.navbar-nav .dropdown-menu {
+    position: static;
+    float: none;
+    background-color: black;
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: white;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+.dropdown-item:hover, .dropdown-item.active {
+    background-color: lawngreen;
+    color: black;
+}

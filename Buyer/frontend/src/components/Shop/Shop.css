@@ -1,0 +1,19 @@
+.shopping-content {
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 991px) {
+    .filter-sidebar {
+        display: none;
+    }
+}
+
+.filter-modal-div {
+    margin: 30px;
+}
+
+@media only screen and (min-width: 992px) {
+    .filter-modal-div {
+        display: none;
+    }
+}

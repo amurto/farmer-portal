@@ -1,0 +1,65 @@
+.comment-container {
+    margin-top: 100px;
+    margin-bottom: 50px; 
+    text-align: center;   
+    font-family: poppins,Arial,sans-serif;
+}
+
+.card-carousel-container {
+    margin-top: 100px;
+}
+
+.card-carousel-div {
+    width: 300px;
+    padding-left: 50px;
+    border-color: white;
+    text-align: left;
+}
+
+.circular--portrait {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.circular--portrait img {
+    width: 100%;
+    height: auto;
+    float: right;
+}
+
+.comment-h {
+    color: black;
+    font-weight: 600;
+}
+
+
+.comment-p {
+    margin-top: 30px;
+    color: #808080;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .comment-container {
+        margin-top: 40px;
+        margin-bottom: 20px;    
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .comment-h {
+        padding-left: 300px;  
+        padding-right: 300px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .comment-p {
+        padding-left: 300px;  
+        padding-right: 300px;
+    }
+}
+

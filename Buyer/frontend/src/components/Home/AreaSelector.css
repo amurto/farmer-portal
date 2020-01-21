@@ -1,0 +1,39 @@
+.map-chart {
+    border: 1px solid black;
+    background-color: black;
+}
+
+.map-container {
+    margin-top: 0px;
+    background-color: black;
+}
+
+.area-selector-div {
+    color: white;
+}
+
+.area-label {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.location-div {
+    width: 30px;
+    height: 40px;
+    border-color: aliceblue;
+}
+
+.geolocation-button {
+    margin-top: 20px;
+    padding-top: 10px;
+    height: 80px;
+    width: 300px;
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+}
+
+.geolocation-button:hover {  
+    border: 2px solid lawngreen;  
+    color: lawngreen;
+}

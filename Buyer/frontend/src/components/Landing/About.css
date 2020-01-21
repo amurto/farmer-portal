@@ -1,0 +1,29 @@
+.jumbo-title {
+    color: white;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.about-card {
+    border-color: white;
+}
+
+.about-card-title {
+    margin-top: 100px;
+    margin-bottom: 24px;
+    color: black;
+    font-family: poppins, Arial, sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.about-card-text {
+    margin-bottom: 16px;
+    color: #808080;
+}
+
+@media only screen and (max-width: 1000px) {
+    .about-card-title {
+      margin-top: 30px;
+    }
+}

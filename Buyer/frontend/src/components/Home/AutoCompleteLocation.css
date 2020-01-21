@@ -1,0 +1,12 @@
+.autocomplete {
+    color: white;
+    background-color: black;
+    width: 300px;
+    border-bottom: 1px solid white !important;
+    border-color: black;
+    padding: 10px;
+}
+
+.autocomplete:focus {
+    outline: none;
+}

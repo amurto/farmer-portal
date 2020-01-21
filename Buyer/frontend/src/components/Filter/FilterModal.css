@@ -1,0 +1,12 @@
+.filter-modal-button {
+    width: 100%;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+.filter-modal-title {
+    font-weight: 300;
+    font-size: 19px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: #555854;
+    display: block;
+}
