@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Administrator</title>
+	<!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+       <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</head>
+<style type="text/css">
+.bg{
+	background-image: linear-gradient(to top left,#8a4592,#35b0a9);
+}
+nav{
+	background-image: linear-gradient(to top right,#35b0a9,#8a4592); 
+	padding-left: 300px;
+}
+.content{
+	padding-left: 300px;
+	height:100%;
+}
+.card-bg{
+	background: rgba(0,0,0,0);
+}
+@media only screen and (max-width: 992px){
+	.content,nav{
+		padding-left: 0;
+	}
+}
+</style>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.sidenav').sidenav();
+	});
+</script>
+<body>
+	<div class="navbar-fixed">
+	<nav>
+		<div class="nav-wrapper">
+			<a href="#" class="brand-logo center">Administrator</a>
+			<a href="" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>		
+		</div>
+	</nav>
+	</div>
+	<ul class="sidenav sidenav-fixed bg" id="slide-out">
+		<li>
+			<div class="user-view">
+				<div class="background">
+					<!--<img src="download.jpg" width="30%" height="60%">-->
+				</div>
+				<a href="#"><img src="download.jpg" class="circle"></a>
+				<a href="#" class="black-text name">AGRICULTURAL PRODUCTION OF INDIA</a>
+				<a href="#" class="black-text email">gfdfindia@gmail.com</a>
+			</div>	
+		</li>
+		<li><a href="" class="white-text"><i class="material-icons">home</i>Dashboard</a></li>
+		<li><a href="" class="white-text"><i class="material-icons">mail</i>Data Member</a></li>
+		<h3 class="white-text">STATES</h3>
+		<li ><a href="#myChart" class="white-text" ><i class="material-icons">&#9630</i>INDIA</a></li>
+		<li><a href="#myChart2" class="white-text" ><i class="material-icons">&#9630</i>MAHARASHTRA</a></li>
+		<li><a href="#myChart3" class="white-text" ><i class="material-icons">&#9630</i>KARNATAKA</a></li>
+		<li><a href="#myChart4" class="white-text" ><i class="material-icons">&#9630</i>MADHYA PRADESH</a></li>
+		<li><a href="#myChart5" class="white-text" ><i class="material-icons">&#9630</i>UTTAR PRADESH</a></li>
+		<li><a href="#myChart6" class="white-text" ><i class="material-icons">&#9630</i>ANDRA PRADESH</a></li>
+		<li><a href="#myChart7" class="white-text" ><i class="material-icons">&#9630</i>TAMILNADU</a></li>
+		<li><a href="#myChart8" class="white-text" ><i class="material-icons">&#9630</i>KERLA</a></li>
+
+	</ul>
+
+	<!-- ACTUAL PAGE     #######################################################-->
+	<div class="content bg">
+		<div class="container">
+		<div class="row">
+			<div class="col s12">
+				<h1 class="white-text">Dashboard</h1>
+			</div>
+			<div class="col s12 m6 l3">
+				<div class="card card-bg white-text">
+					<div class="card-content center">
+						<p>Revenue</p>
+						<h5>$12,476.00</h5>
+						<i class="material-icons small green-text">keyboard_arrow_up</i><br>
+						<b class="green-text">%12</b>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 m6 l3">
+				<div class="card card-bg white-text">
+					<div class="card-content center">
+						<p>Click</p>
+						<h5>2400</h5>
+						<i class="material-icons small red-text">keyboard_arrow_down</i><br>
+						<b class="red-text">%10</b>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 l3 m6">
+				<div class="card card-bg white-text">
+					<div class="card-content center">
+						<p>Users</p>
+						<h5>5000,00</h5>
+						<i class="material-icons small green-text">keyboard_arrow_up</i><br>
+						<b class="green-text">%7</b>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 l3 m6">
+				<div class="card card-bg white-text">
+					<div class="card-content center">
+						<p></p>
+						<h5>0,80%</h5>
+						<i class="material-icons small green-text">keyboard_arrow_up</i><br>
+						<b class="green-text">%25</b>
+					</div>
+				</div>
+			</div>
+			<div class="col l12 m6 s12">
+				<div class="card card-bg">
+					<div class="card-content">
+						<canvas id="myChart" ></canvas>
+					</div>
+				</div>
+			</div>
+			<div class="col l12 m6 s12">
+				<div class="card card-bg">
+					<div class="card-content" >
+						<canvas id="myChart2" ></canvas>
+					</div>
+				</div>
+			</div>
+
+			<div class="col l12 m6 s12">
+				<div class="card card-bg">
+					<div class="card-content" >
+						<canvas id="myChart3"></canvas>
+					</div>
+				</div>
+			</div>
+
+			<div class="col l12 m6 s12">
+				<div class="card card-bg">
+					<div class="card-content" >
+						<canvas id="myChart4"></canvas>
+					</div>
+				</div>
+			</div>
+
+			<div class="col l12 m6 s12">
+				<div class="card card-bg">
+					<div class="card-content" >
+						<canvas id="myChart5"></canvas>
+					</div>
+				</div>
+			</div>
+
+			<div class="col l12 m6 s12">
+				<div class="card card-bg">
+					<div class="card-content" >
+						<canvas id="myChart6"></canvas>
+					</div>
+				</div>
+			</div>
+
+			<div class="col l12 m6 s12">
+				<div class="card card-bg">
+					<div class="card-content" >
+						<canvas id="myChart7"></canvas>
+					</div>
+				</div>
+			</div>
+
+			<div class="col l12 m6 s12">
+				<div class="card card-bg">
+					<div class="card-content" >
+						<canvas id="myChart8"></canvas>
+					</div>
+				</div>
+			</div>
+
+			<div class="col l12 m6 s12">
+				<div class="card card-bg">
+					<div class="card-content" >
+						<canvas id="myChart9"></canvas>
+					</div>
+				</div>
+			</div>
+
+			<div class="col l12 m6 s12">
+				<div class="card card-bg">
+					<div class="card-content" >
+						<canvas id="myChart10"></canvas>
+					</div>
+				</div>
+			</div>
+
+			
+			
+
+		
+			
+		</div>
+	</div>
+	</div>
+	<script type="text/javascript">
+	  Chart.defaults.global.defaultFontColor = 'white';
+		var chr=document.getElementById("myChart").getContext("2d");
+		var chr2=document.getElementById("myChart2").getContext("2d");
+		var chr3=document.getElementById("myChart3").getContext("2d");
+		var chr4=document.getElementById("myChart4").getContext("2d");
+		var chr5=document.getElementById("myChart5").getContext("2d");
+		var chr6=document.getElementById("myChart6").getContext("2d");
+		var chr7=document.getElementById("myChart7").getContext("2d");
+		var chr8=document.getElementById("myChart8").getContext("2d");
+		var chr9=document.getElementById("myChart9").getContext("2d");
+		var myChart=new Chart(chr,{
+			type:'bar',
+			data:{
+				labels:['rice','wheat','jawar','maize','legume','sugar','pulses'],
+				datasets:[{
+					label:'crops production in india',
+					data:[1100,1250,1090,1400,1150,1450,1107],
+					backgroundColor:[
+            'rgba(255, 99, 132, 0.6)',
+            'rgba(54, 162, 235, 0.6)',
+            'rgba(255, 206, 86, 0.6)',
+            'rgba(75, 192, 192, 0.6)',
+            'rgba(153, 102, 255, 0.6)',
+            'rgba(255, 159, 64, 0.6)',
+            'rgba(255, 99, 132, 0.6)'
+          ],
+					borderColor:'#fff',
+					borderWidth:2,
+				}]
+			},
+			options:{
+				title:{
+					display:true,
+					text:'PRODUCTION IN INDIA',
+					fontSize:25,
+					fontColor:'black'
+				},
+				legend:{
+					labels:{
+						fontColor:'#fff',
+					}
+
+				}
+			}
+		});
+		var myChart2=new Chart(chr2,{
+			type:'bar',
+			data:{
+				labels:['grape','wheat','rice','lugemin','sorghum'],
+				datasets:[{
+					label:'CROP PRODUCTION (Kgs)',
+					data:[200,512,350,220,190],
+					backgroundColor:[
+            'rgba(255, 99, 132, 0.6)',
+            'rgba(54, 162, 235, 0.6)',
+            'rgba(255, 206, 86, 0.6)',
+            'rgba(75, 192, 192, 0.6)',
+            'rgba(153, 102, 255, 0.6)',
+            'rgba(255, 159, 64, 0.6)',
+            'rgba(255, 99, 132, 0.6)'
+          ],
+					borderColor:'#fff',
+					borderWidth:1,
+				}]
+			},
+			options:{
+				title:{
+					display:true,
+					text:'PRODUCTION IN MAHARASHTRA',
+					fontSize:25,
+					fontColor:'black'
+				},
+				layout:{
+          padding:{
+            left:0,
+            right:0,
+            bottom:0,
+            top:0
+          }
+        },
+				legend:{
+					labels:{
+						fontColor:'black',
+					}
+				}
+			}
+		});
+
+		var myChart3=new Chart(chr3,{
+			type:'bar',
+			data:{
+				labels:['rice','finger millet','sorghum','maize','legume','cashew'],
+				datasets:[{
+					label:'CROP PRODUCTION (Kgs)',
+					data:[200,512,350,220,190,400],
+					backgroundColor:[
+            'rgba(255, 99, 132, 0.6)',
+            'rgba(54, 162, 235, 0.6)',
+            'rgba(255, 206, 86, 0.6)',
+            'rgba(75, 192, 192, 0.6)',
+            'rgba(153, 102, 255, 0.6)',
+            'rgba(255, 159, 64, 0.6)',
+			'rgba(255, 99, 132, 0.6)',
+			'rgba(255,169,140.0.6)'
+          ],
+					borderColor:'#fff',
+					borderWidth:1,
+				}]
+			},
+			options:{
+				title:{
+					display:true,
+					text:'PRODUCTION IN KARNATAKA',
+					fontSize:25,
+					fontColor:'black'
+				},
+				
+				layout:{
+          padding:{
+            left:50,
+            right:50,
+            bottom:50,
+            top:50
+          }
+        },
+				legend:{
+					labels:{
+						fontColor:'black',
+					}
+				}
+			}
+		});
+
+		var myChart4=new Chart(chr4,{
+			type:'bar',
+			data:{
+				labels:['rice','wheat','sorghum','maize','cotton','sugarcane'],
+				datasets:[{
+					label:'CROP PRODUCTION (Kgs)',
+					data:[400,562,290,320,690,420],
+					backgroundColor:[
+            'rgba(255, 99, 132, 0.6)',
+            'rgba(54, 162, 235, 0.6)',
+            'rgba(255, 206, 86, 0.6)',
+            'rgba(75, 192, 192, 0.6)',
+            'rgba(153, 102, 255, 0.6)',
+            'rgba(255, 159, 64, 0.6)',
+			'rgba(255, 99, 132, 0.6)',
+			'rgba(255,169,140.0.6)'
+          ],
+					borderColor:'#fff',
+					borderWidth:1,
+				}]
+			},
+			options:{
+				title:{
+					display:true,
+					text:'PRODUCTION IN MADHYA PARDESH',
+					fontSize:25,
+					fontColor:'black'
+				},
+				
+				layout:{
+          padding:{
+            left:50,
+            right:50,
+            bottom:50,
+            top:50
+          }
+        },
+				legend:{
+					labels:{
+						fontColor:'black',
+					}
+				}
+			}
+		});
+
+		
+		var myChart5=new Chart(chr5,{
+			type:'bar',
+			data:{
+				labels:['rice','wheat','legumin'],
+				datasets:[{
+					label:'CROP PRODUCTION (Kgs)',
+					data:[450,600,292],
+					backgroundColor:[
+            'rgba(255, 99, 132, 0.6)',
+            'rgba(54, 162, 235, 0.6)',
+            'rgba(255, 206, 86, 0.6)',
+            'rgba(75, 192, 192, 0.6)',
+            'rgba(153, 102, 255, 0.6)',
+            'rgba(255, 159, 64, 0.6)',
+			'rgba(255, 99, 132, 0.6)',
+			'rgba(255,169,140.0.6)'
+          ],
+					borderColor:'#fff',
+					borderWidth:1,
+				}]
+			},
+			options:{
+				title:{
+					display:true,
+					text:'PRODUCTION IN UTTAR PARDESH',
+					fontSize:25,
+					fontColor:'black'
+				},
+				
+				layout:{
+          padding:{
+            left:50,
+            right:50,
+            bottom:50,
+            top:50
+          }
+        },
+				legend:{
+					labels:{
+						fontColor:'black',
+					}
+				}
+			}
+		});
+
+		var myChart6=new Chart(chr6,{
+			type:'bar',
+			data:{
+				labels:['perl millet','finger millet','leugim','tobaco','sugarcane'],
+				datasets:[{
+					label:'CROP PRODUCTION (Kgs)',
+					data:[670,562,240,690,420],
+					backgroundColor:[
+            'rgba(255, 99, 132, 0.6)',
+            'rgba(54, 162, 235, 0.6)',
+            'rgba(255, 206, 86, 0.6)',
+            'rgba(75, 192, 192, 0.6)',
+            'rgba(153, 102, 255, 0.6)',
+            'rgba(255, 159, 64, 0.6)',
+			'rgba(255, 99, 132, 0.6)',
+			'rgba(255,169,140.0.6)'
+          ],
+					borderColor:'#fff',
+					borderWidth:1,
+				}]
+			},
+			options:{
+				title:{
+					display:true,
+					text:'PRODUCTION IN ANDHRA PARDESH',
+					fontSize:25,
+					fontColor:'black'
+				},
+				
+				layout:{
+          padding:{
+            left:50,
+            right:50,
+            bottom:50,
+            top:50
+          }
+        },
+				legend:{
+					labels:{
+						fontColor:'black',
+					}
+				}
+			}
+		});
+
+		var myChart7=new Chart(chr7,{
+			type:'bar',
+			data:{
+				labels:['rice','wheat','sorghum','maize','cotton','sugarcane'],
+				datasets:[{
+					label:'CROP PRODUCTION (Kgs)',
+					data:[444,980,340,234,721,234],
+					backgroundColor:[
+            'rgba(255, 99, 132, 0.6)',
+            'rgba(54, 162, 235, 0.6)',
+            'rgba(255, 206, 86, 0.6)',
+            'rgba(75, 192, 192, 0.6)',
+            'rgba(153, 102, 255, 0.6)',
+            'rgba(255, 159, 64, 0.6)',
+			'rgba(255, 99, 132, 0.6)',
+			'rgba(255,169,140.0.6)'
+          ],
+					borderColor:'#fff',
+					borderWidth:1,
+				}]
+			},
+			options:{
+				title:{
+					display:true,
+					text:'PRODUCTION IN TAMIL NADU',
+					fontSize:25,
+					fontColor:'black'
+				},
+				
+				layout:{
+          padding:{
+            left:50,
+            right:50,
+            bottom:50,
+            top:50
+          }
+        },
+				legend:{
+					labels:{
+						fontColor:'black',
+					}
+				}
+			}
+		});
+
+		
+	</script>
+
+
+
+
+
+
+
+ 		
+</body>
+</html>
