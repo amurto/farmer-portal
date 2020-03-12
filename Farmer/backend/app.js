@@ -50,7 +50,7 @@ app.use((error, req, res, next) => {
 });
 
 mongoose
-  .connect('mongodb+srv://amurto:*mongodb*@cluster0-d4rva.mongodb.net/test?retryWrites=true&w=majority',
+  .connect('mongodb+srv://XXXXX:XXXXX@cluster0-d4rva.mongodb.net/test?retryWrites=true&w=majority',
     { 
       useCreateIndex: true,
       useNewUrlParser: true, 
