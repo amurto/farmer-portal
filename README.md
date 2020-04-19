@@ -65,7 +65,7 @@ npm install
 
 # Usage
 
-Run the admin server
+Run the admin server on port 5000
 ```bash
 cd web_app/backend
 npm start
