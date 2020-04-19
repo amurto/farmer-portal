@@ -29,7 +29,7 @@ Online portal for farmers to upload their sell and a dynamic ecommerce webapp wh
 
 * [npm](https://www.npmjs.com/)
 * [Express.js](https://expressjs.com/)
-* [MongoDB](https://reactjs.org/)
+* [MongoDB](https://www.mongodb.com/)
 * [React.js](https://reactjs.org/)
 
 # Installation
